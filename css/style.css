@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Palanquin:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: "Amsterdam";
+    src: url("../fonts/amsterdam-two-ttf.ttf") format("truetype");
+    font-weight: normal;
+}
+
+:root{
+    --color-primary: #631d76;
+    --color-secondary: #D782BA;
+    --color-tertiary: #E18AD4;
+    --color-complementary: #F7F7F9;
+    --color-complementary-2: #050505;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palanquin', sans-serif;
+}
+
+body{
+    height: 110vh;
+    background: rgb(71,22,84);
+    background: linear-gradient(180deg, rgba(71,22,84,1) 0%, rgba(99,29,118,1) 30%, rgba(119,46,130,1) 53%);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .header{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.container .header h1{
+    font-size: 38px;
+    font-family: "Amsterdam";
+    color: var(--color-complementary);
+}
+
+.container .header > h2{
+    font-family: "Michroma", sans-serif;
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+
+.container .header > img{
+    margin-bottom: 3%;
+}
+
+.container .header .img{
+    width: 150px;
+    border-radius: 75px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.links-list{
+    margin: 0 auto;
+    list-style: none;
+    width: 80vw;
+}
+
+.links-list li a{
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-primary);
+    background-color: var(--color-complementary);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transition-duration: 500ms;
+}
+
+.links-list li a:hover{
+    background-color: var(--color-tertiary);
+}
+
+.links-list li a:active{
+    transition-duration: 0ms;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.links-list li a:hover span{
+    color: var(--color-complementary);
+}
+
+.links-list li:nth-child(2) a{
+    margin: 20px 0;
+}
+
+.links-list li a h2{
+    font-weight: 700;
+}
+
+.links-list li a span{
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-secondary);
+    transition-duration: 500ms;
+}
+
+@media screen and (min-width: 1000px) {
+    .container .header h1{
+        font-size: 50px;
+    }
+    
+    .container .header > h2{
+        font-size: 30px;
+    }
+
+    .links-list{
+        max-width: 1000px;
+    }
+
+    .links-list li a h2{
+        font-size: 28px;
+        font-weight: 700;
+        transition-duration: 500ms;
+    }
+    
+    .links-list li a span{
+        font-weight: 600;
+        font-size: 20px;
+        transition-duration: 500ms;
+    }
+}
+
+/**********************************
+    AVISO PÁGINA EM CONSTRUÇÃO
+***********************************/
+
+.box{
+    background-color: var(--color-complementary);
+    color: var(--color-complementary-2);
+    padding: 30px;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 40px 15px ;
+    box-shadow:
+    0.7px 3.6px 2.7px rgba(0, 0, 0, 0.078),
+    1.9px 9.2px 6.9px rgba(0, 0, 0, 0.111),
+    3.7px 18.2px 14.2px rgba(0, 0, 0, 0.139),
+    7.1px 35px 29.2px rgba(0, 0, 0, 0.172),
+    21px 103px 80px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box h1{
+    font-family: "Amsterdam";
+    font-size: 40px;
+}
+
+.box p{
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.box .btn{
+    margin-top: 50px;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+.box a img{
+    margin-top: 30px;
+    width: 40px;
+}
